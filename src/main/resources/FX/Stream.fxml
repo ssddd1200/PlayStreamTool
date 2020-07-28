@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yjs.controller.StreamController">
+   <children>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="180.0" text="输入路径" />
+          <TableColumn fx:id="col2" prefWidth="80.0" text="协议" />
+            <TableColumn fx:id="col3" prefWidth="180.0" text="输出路径" />
+        </columns>
+      </TableView>
+      <Button layoutX="486.0" layoutY="20.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#addInfo" text="新增" />
+      <Button layoutX="486.0" layoutY="63.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#editInfo" text="编辑" />
+      <Button layoutX="486.0" layoutY="106.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#delInfo" text="删除" />
+      <Button layoutX="488.0" layoutY="353.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#startPushStream" text="开始推流" />
+      <Button layoutX="488.0" layoutY="394.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#stopPushStream" text="停止推流" />
+      <Button fx:id="startServer" layoutX="486.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#startNginx" text="启动服务器" />
+      <Button fx:id="stopServer" layoutX="486.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" onAction="#stopNginx" text="停止服务器" />
+   </children>
+</Pane>

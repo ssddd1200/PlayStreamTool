@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yjs.controller.ConfigController">
+   <children>
+      <Label layoutX="30.0" layoutY="22.0" text="基本配置">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Separator layoutX="1.0" layoutY="58.0" prefHeight="30.0" prefWidth="600.0" />
+      <Label layoutX="31.0" layoutY="116.0" prefHeight="20.0" prefWidth="160.0" text="服务器目录" />
+      <TextField fx:id="serverAdd" layoutX="31.0" layoutY="154.0" prefHeight="23.0" prefWidth="492.0" />
+      <Button layoutX="525.0" layoutY="154.0" mnemonicParsing="false" onAction="#chose1" text="选择" />
+      <Label layoutX="31.0" layoutY="195.0" prefHeight="20.0" prefWidth="160.0" text="ffmpeg工具地址" />
+      <TextField fx:id="ffmpegAdd" layoutX="31.0" layoutY="235.0" prefHeight="23.0" prefWidth="492.0" />
+      <Button layoutX="525.0" layoutY="235.0" mnemonicParsing="false" onAction="#chose2" text="选择" />
+      <Button layoutX="268.0" layoutY="332.0" mnemonicParsing="false" onAction="#saveConf" text="保存配置" />
+   </children>
+</Pane>

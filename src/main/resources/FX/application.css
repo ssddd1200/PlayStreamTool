@@ -1,0 +1,12 @@
+.root{
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Helvetica, Arial, sans-serif";
+}
+VBox{
+    -fx-background-color: #10dd0e;
+}
+#stream, #config{
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff;
+    -fx-alignment: center;
+}
